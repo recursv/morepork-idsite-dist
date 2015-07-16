@@ -22,8 +22,8 @@
         <div class="box row">
           <div class="email-password-area  col-xs-12" ng-class="[hasSocial ? 'small col-sm-8' : 'large col-sm-12']">
             <div class="header">
-              <span>Morepork2 Log In</span>
-              <span ng-show="false" wd-can-register>
+              <span>Log In</span>
+              <span ng-show="canRegister" wd-can-register>
                 <span> or </span>
                 <a href="#register">Create an Account</a>
               </span>
@@ -57,7 +57,7 @@
                   <input class="form-control" type="password" name="password" ng-model="password" placeholder="Password"/>
                 </div>
               </div>
-              <div class="form-group group-remember-me">
+              <div ng-show="false" class="form-group group-remember-me">
                 <div class="col-sm-8" ng-class="[hasSocial ? '' : 'col-sm-offset-4']">
                   <input type="checkbox" id="remember">
                   <label for="remember">Remember me</label>
