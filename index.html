@@ -19,7 +19,7 @@
   <body ng-app="stormpathIdpApp">
     <script type="text/ng-template" id="views/login.html">
       <div class="view login-view" ng-show="ready">
-        <div class="box row">
+        <div class="row">
           <div class="col-xs-12" ng-class="[hasSocial ? 'small col-sm-8' : 'large col-sm-12']">
             <div ng-show="false" class="header">
               <span>Log In</span>
@@ -27,7 +27,6 @@
                 <span> or </span>
                 <a href="#register">Create an Account</a>
               </span>
-
             </div>
             <div class="alert alert-danger bad-login" ng-show="errors.badLogin">
               Invalid username or password.
