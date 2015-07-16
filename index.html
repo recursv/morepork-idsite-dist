@@ -20,10 +20,10 @@
     <script type="text/ng-template" id="views/login.html">
       <div class="view login-view" ng-show="ready">
         <div class="box row">
-          <div class="email-password-area  col-xs-12" ng-class="[hasSocial ? 'small col-sm-8' : 'large col-sm-12']">
-            <div class="header">
+          <div class="col-xs-12" ng-class="[hasSocial ? 'small col-sm-8' : 'large col-sm-12']">
+            <div ng-show="false" class="header">
               <span>Log In</span>
-              <span ng-show="false" wd-can-register>
+              <span ng-show="canRegister" wd-can-register>
                 <span> or </span>
                 <a href="#register">Create an Account</a>
               </span>
@@ -58,7 +58,7 @@
                 </div>
               </div>
               <div class="form-group group-remember-me">
-                <div class="col-sm-8" ng-class="[hasSocial ? '' : 'col-sm-offset-4']">
+                <div ng-show="false" class="col-sm-8" ng-class="[hasSocial ? '' : 'col-sm-offset-4']">
                   <input type="checkbox" id="remember">
                   <label for="remember">Remember me</label>
                 </div>
