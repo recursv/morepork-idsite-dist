@@ -148,7 +148,7 @@
     </script>
     <script type="text/ng-template" id="views/forgot.html">
       <div class="view forgot-view">
-        <div class="box row">
+        <div class="row">
           <div class="col-sm-12">
             <div class="header">
               <span ng-show="!sent && !retry">Password Reset</span>
@@ -321,6 +321,7 @@
       <div class="logo-container">
         <img ng-show="logoUrl" class="logo img-responsive" ng-src="{{logoUrl}}"/>
       </div>
+      <div class="morepork-header"/>
       <div ng-show="inError" ng-include="'views/error.html'"></div>
       <div ng-hide="inError" ng-view="">
         <!-- this will be replaced a the view, as determined by the route config in app.js -->
